@@ -1,0 +1,23 @@
+<ion-navbar *navbar dark>
+  <button menuToggle>
+    <ion-icon name='menu'></ion-icon>
+  </button>
+  <ion-title>
+    Guided workout detail
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="workouts">
+  <ion-grid>
+    <ion-row wrap>
+      <ion-col width-50 *ngFor="let workout of workoutPlans">
+        <img (click)="goToDetail(workout)" 
+        class="image" 
+        [src]="workout.image">
+        <div class="text title">{{workout.name}}</div>
+        <div class="text description">This short workout plan is ideal for beginners who are looking for a basic workout that blends bodyweight strength and cardiovascular endurance training.</div>
+        <div class="text followers">4,234,523   FOLLOWERS</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

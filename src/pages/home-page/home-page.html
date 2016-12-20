@@ -1,0 +1,215 @@
+<ion-navbar *navbar dark>
+  <button menuToggle>
+    <ion-icon name='menu'></ion-icon>
+  </button>
+  <ion-title>Home</ion-title>
+</ion-navbar>
+
+<ion-content class="homePage">
+
+  <ion-card class="activity card">
+    <div>
+      <ion-list-header class="header">7.20-7.26</ion-list-header>
+      <div class="chart activity">
+        <div class="chartText">{{activity.metric}}</div>
+        <svg width="140" height="140">
+          <circle id="circle" class="circle_animation" r="60" cy="71" cx="71" stroke-width="9" stroke="#4CAF50" fill="none" />
+        </svg>
+        <div class="activityTitle">{{activity.title}}</div>
+      </div>
+
+      <div class="chart sleep">
+        <div class="chartText">{{sleep.metric}}</div>
+        <svg width="140" height="140">
+          <circle id="circle" class="circle_animation" r="60" cy="71" cx="71" stroke-width="9" stroke="#3F51B5" fill="none" />
+        </svg>
+        <div class="sleepTitle">{{sleep.title}}</div>
+      </div>
+      <!--<div class="descriptionContainer">
+        <h1>{{activity.title}}</h1>
+        <div class="descriptionText">
+          {{activity.description}}
+        </div>
+      </div>-->
+    </div>
+  </ion-card>
+
+  <!--<ion-card class="activity card">
+    <div class="chart sleep">
+      <div class="chartText">{{sleep.metric}}</div>
+      <svg width="140" height="140">
+        <circle id="circle" class="circle_animation" r="60" cy="71" cx="71" stroke-width="9" stroke="#3F51B5" fill="none" />
+      </svg>
+    </div>
+
+    <div class="descriptionContainer">
+      <h1>{{sleep.title}}</h1>
+      <div class="descriptionText">
+        {{sleep.description}}
+      </div>
+    </div>
+  </ion-card>-->
+
+  <ion-card class="card workoutList">
+    <ion-list>
+      <ion-list-header class="header">
+        Today
+      </ion-list-header>
+
+      <ion-item class="myWorkoutListItem">
+        <ion-avatar item-left>
+          <img class="image" src="https://img.stb.s-msn.com/usappex/tenant/amp/entityid/BBfcaHm_m4_h400_w600.png">
+        </ion-avatar>
+        <h2>Tabata Lunges</h2>
+        <h3>Estimate duration 27 MIN.</h3>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header class="header">
+        Last Week
+      </ion-list-header>
+
+      <ion-item class="myWorkoutListItem">
+        <ion-avatar item-left>
+          <img class="image" src="https://img.stb.s-msn.com/usappex/tenant/amp/entityid/BBfcntA_m4_h400_w600.jpg">
+        </ion-avatar>
+        <h2>Tabata Planks</h2>
+        <h3>Estimate duration 14 MIN.</h3>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <!--<ion-card class="card">
+    <div class="social">
+      <div class="speedometer">
+        <div class="speedometerMask"></div>
+        <div class="pointer"></div>
+      </div>
+    </div>
+    <div class="spacer30"></div>
+    <ion-row class="panel">
+      <ion-col width-25 class="panelData">
+        <ion-icon class="panelIcon" name="analytics"></ion-icon>
+        <div class="panelTitleText">RUN</div>
+        <div class="panelMetricNumText">{{socialMetrics.run}}</div>
+        <div class="panelMetricUnitText">MILES</div>
+      </ion-col>
+      <ion-col width-25 class="panelData">
+        <ion-icon class="panelIcon" name="bicycle"></ion-icon>
+        <div class="panelTitleText">BIKE</div>
+        <div class="panelMetricNumText">{{socialMetrics.bike}}</div>
+        <div class="panelMetricUnitText">MILES</div>
+      </ion-col>
+      <ion-col width-25 class="panelData">
+        <ion-icon class="panelIcon" name="time"></ion-icon>
+        <div class="panelTitleText">CARDIO</div>
+        <div class="panelMetricNumText">{{socialMetrics.cardio}}</div>
+        <div class="panelMetricUnitText">MINS</div>
+      </ion-col>
+      <ion-col width-25 class="panelData">
+        <ion-icon class="panelIcon" name="person"></ion-icon>
+        <div class="panelTitleText">STEPS</div>
+        <div class="panelMetricNumText">{{socialMetrics.step}}</div>
+        <div class="panelMetricUnitText">STEPS</div>
+      </ion-col>
+    </ion-row>
+  </ion-card>-->
+
+  <ion-card class="card muscle">
+    <ion-list-header class="header">Muscle Map</ion-list-header>
+    <img class="image" src="img/MuscleMap-Back.svg">
+    <img class="image" src="img/MuscleMap-Front.svg">
+    <ion-list-header class="header">
+      <ion-icon class="primaryDot" name="information-circle"></ion-icon>
+      <span class="dotText">Primary</span>
+      <ion-icon class="secondaryDot" name="information-circle"></ion-icon>
+      <span class="dotText">Secondary</span>
+      <ion-icon class="TirtiaryDot" name="information-circle"></ion-icon>
+      <span>Tirtiary</span>
+    </ion-list-header>
+    <div class="tip">
+      It looks like you're working your legs a lot! Try switching it up with an upper body workout tomorrow.
+    </div>
+  </ion-card>
+
+  <!--<ion-card class="card calendar">
+    <button (click)="getEvents()">Get Calendar</button>
+    <div [hidden]="events == null">
+      <ion-list>
+        <ion-item *ngFor="let event of events" class="calendarListItem">
+          <span>{{event.name}}</span>
+          <span>{{event.start_time}}</span>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-card>-->
+
+  <ion-card class="card achievement">
+    <ion-list-header class="header">
+      MY GOALS FOR THIS WEEK
+    </ion-list-header>
+
+    <ion-list class="goalList" no-lines>
+
+      <ion-item>
+        <ion-icon name="checkbox-outline"></ion-icon>
+        <span class="text">Monday - Do the Couch to 5k - Day 2 guided workout at 7PM.</span>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="square-outline"></ion-icon>
+        <span class="text">Thursday - Play soccer with my kids at the park for 30 minutes.</span>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-card class="card achievement">
+
+    <img class="image" src="img/GoldenDumbbell.svg">
+    <div class="descriptionContainer">
+      <ion-list-header class="fitListHeader">THE GOLDEN DUMBBELL</ion-list-header>
+      <span class="text">You've done a workout every day this week! All that hard work will lead you to a healthier lifestyle.</span>
+    </div>
+  </ion-card>
+
+  <ion-card class="card rating">
+    <img class="image" src="img/Rating.png">
+  </ion-card>
+
+  <ion-card class="card comments" *ngFor="let com of comments">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{com.avatarUrl}}">
+      </ion-avatar>
+      <h2>{{com.name}}</h2>
+      <p>{{com.date}}</p>
+    </ion-item>
+    <img src="{{com.imageUrl}}">
+    <ion-card-content>
+      <p>{{com.content}}</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button primary clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>{{com.likes}}</div>
+      </button>
+      </ion-col>
+      <ion-col>
+        <button primary clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>{{com.ammountComments}}</div>
+      </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          {{com.lastUpdate}}
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+</ion-content>

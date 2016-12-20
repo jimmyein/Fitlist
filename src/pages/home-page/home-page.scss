@@ -1,0 +1,466 @@
+// Material design
+// 000000 -> 212121 -> 303030 -> 424242
+.fitListHeader {
+    color: #ddd;
+    background-color: #424242;
+    padding-top: 10px;
+}
+
+.chartContainer {
+    height: 200px;
+
+    .chart { 
+        display: block; 
+    }
+}
+
+.homePage {
+    background-color: #303030;
+
+    .card {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        background-color:#424242;
+    }
+
+    .card-Blue {
+        background:  -webkit-linear-gradient(51deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+        background:  -o-linear-gradient(51deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+        background:  linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+        opacity: 90;
+    }
+
+    .card-Winter {
+        background: #E6DADA; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #E6DADA , #274046); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #E6DADA , #274046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .card-Lost {
+        background: #5D4157; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #5D4157 , #A8CABA); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #5D4157 , #A8CABA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .card-Moor {
+        background: #616161; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #616161 , #9bc5c3); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #616161 , #9bc5c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .card-Aqualicious {
+        background: #50C9C3; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #50C9C3 , #96DEDA); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #50C9C3 , #96DEDA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .card-Dracula {
+        background: #DC2424; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #DC2424 , #4A569D); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #DC2424 , #4A569D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .card-Shadow {
+        background: #000000; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #000000 , #53346D); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #000000 , #53346D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .card-ServQuick {
+        background: #485563; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .card-Paper {
+        background-color: #fff; 
+        background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+        background-size: 100% 1.2em;
+    }
+    
+    h1,h2,h3,
+    div,span {
+        color: #ddd;
+    }
+
+    p {
+        color: lightgray;
+    }
+}
+
+.social {
+  margin: 20px auto;
+  width: 300px;
+  background-color: transparent;
+
+    .speedometer {
+        width: 300px;
+        height: 150px;
+        background: #3F51B5;
+        border-radius: 200px 200px 0 0;
+        position: relative;
+    }
+
+    .speedometer .speedometerMask {
+        width: 280px;
+        height: 140px;
+        background-color:#424242;
+        background-size:16px 16px;
+        border-radius: 200px 200px 0 0;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .speedometer .pointer {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+    }
+
+    .speedometer .pointer:after {
+        content: "";
+        display: block;
+        width: 60px;
+  	    height: 60px;
+  	    border-radius: 60px;
+  	    background: #3F51B5;
+  	    position: absolute;
+  	    bottom: -10px;
+  	    left: -30px;
+    }
+
+
+    .speedometer .pointer:before {
+  	    content: "";
+  	    display: block;
+  	    position: absolute;
+  	    left: -5px;
+  	    bottom: 0px;
+  	    width: 10px;
+  	    height: 100px;
+  	    background: #4CAF50;
+  	    border-radius: 40px 40px 0 0;
+  	    transform-origin: center 80px;
+  	    animation: roll 3s;
+  	    animation-iteration-count: 1;
+  	    transform: rotate(60deg);
+    }
+
+    @keyframes roll {
+        from {
+            transform: rotate(-90deg);
+        }
+        to {
+            transform: rotate(60deg);
+        }
+    }
+}
+
+.panel {
+    .panelData {
+        text-align: center;
+    }
+
+    .panelIcon {
+        font-size: 40px;
+        color:#3F51B5;
+        margin-bottom: 10px;
+    }
+
+    .panelTitleText {
+        font-size: 15px;
+        color:white;
+        margin-bottom: 4px;
+    }
+
+    .panelMetricNumText {
+        font-size: 20px;
+        color: #ddd;
+    }
+
+    .panelMetricUnitText {
+        font-size: 8px;
+        color: #ddd;
+    }
+}
+
+.spacer50 {
+    height: 50px;
+}
+
+.spacer30 {
+    height: 30px;
+}
+
+.workoutList {
+    background-color:#303030;
+    color: #ddd;
+    overflow: hidden;
+
+    .header {
+        color: #ddd;
+        background-color: #424242;
+        padding-top: 10px;
+        margin-top: 0;
+    }
+
+    .item {
+        background-color:#424242;
+        color: #ddd;
+        height: 100px;
+        border-bottom: none !important;     
+    }
+
+    ion-list + ion-list {
+        margin-top: 0;
+    }
+
+    .myWorkoutListItem {
+
+        .image {
+            height: 60px;
+            width: 60px;
+        }
+
+        ion-avatar img {
+            max-width: none;
+            max-height: none;
+            border-radius: 3rem;
+        }
+    }
+
+}
+
+.calendar {
+    height: 200px;
+    overflow-y: scroll;
+
+    .calendarListItem {
+        background-color:#424242;
+        background-size:16px 16px;
+        color: #ddd;
+    }
+}
+
+.activity {
+
+    .header {
+        color: #ddd;
+        background-color: #424242;
+        padding-top: 10px;
+    }
+
+    .activityTitle {
+        position: relative;
+        color: #ddd;
+        left: 43px;
+    }
+
+    .sleepTitle {
+        position: relative;
+        color: #ddd;
+        left: 43px;
+    }
+
+    .descriptionContainer {
+        padding-top: 20px;
+        display: inline-block;
+        position: absolute;
+        width: 50%;
+        padding-right: 14px;
+        height: 200px;
+    }
+
+    .descriptionText {
+        position: relative;
+        margin-top: 20px;
+        background-color: transparent;
+    }
+
+    .chart {
+        display: inline-block;
+        width: 49%;
+        height: 200px;
+        background-color: transparent;
+    }
+
+    .chartText {
+        position: relative;
+        color: #ddd;
+        top: 43%;
+        transform: translateY(-50%);
+        left: 43px;
+    }
+
+    svg {
+        transform: rotate(-90deg);
+    }
+
+    .circle_animation {
+        stroke-dasharray: 340;
+        stroke-dashoffset: 340;
+    }
+
+    .activity .circle_animation {
+        -webkit-animation: activity 1s ease-out forwards;
+        animation: activity 1s ease-out forwards;
+    }
+
+    .sleep .circle_animation {
+        -webkit-animation: sleep 1s ease-out forwards;
+        animation: sleep 1s ease-out forwards;
+    }
+
+    @-webkit-keyframes activity {
+        to {
+            stroke-dashoffset: 80;
+        }
+    }
+
+    @keyframes activity {
+        to {
+            stroke-dashoffset: 80;
+        }
+    }
+
+    @-webkit-keyframes sleep {
+        to {
+            stroke-dashoffset: 160;
+        }
+    }
+
+    @keyframes sleep {
+        to {
+            stroke-dashoffset: 160;
+        }
+    }
+}
+
+.muscle {
+    .image {
+        margin-top: 10px;
+        height: 250px;
+        width: 49%;
+        display: inline-block;
+    }
+
+    .header {
+        color: #ddd;
+        background-color: #424242;
+        padding-top: 10px;
+    }
+
+    .primaryDot {
+        color: #33B7BE;
+    }
+
+    .secondaryDot {
+        color: #4800E7;
+    }
+
+    .TirtiaryDot {
+        color: #220CA7;
+    }
+    
+    .dotText {
+        margin-right: 10px;
+    }
+
+    .tip {
+        padding-left: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+.achievement {
+	.image {
+		height: 80px;
+		width: 25%;
+        display: inline-block;
+	}
+
+    .header {
+        color: #ddd;
+        background-color: #424242;
+        padding-top: 10px;
+    }
+
+    .goalList {
+        background-color: #424242;
+        color: white;
+        width: 100%;
+        border-top: 1px solid white;
+
+        .item {
+            background-color: #424242;
+            color: white;
+        }
+
+        .text {
+            font-size: 14px;
+            display: inline-block;
+            white-space: nowrap;
+  			overflow: hidden;
+  		    text-overflow: ellipsis;
+        }
+    }
+
+    .descriptionContainer {
+        display: inline-block;
+        width: 69%;
+        height: 100%;
+        margin-right: 16px;
+        height: 110px;
+
+        .text {
+            margin-left: 16px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    }
+}
+
+.comments {
+    background-color: #424242;
+
+    ion-card {
+        position: relative;
+        text-align: center;
+    }
+
+    .item {
+        background-color: #424242;
+    }
+
+    .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+    }
+}
+
+
+.rating {
+
+	.image {
+		height: 190px;
+		width: 100%;
+	}
+}
