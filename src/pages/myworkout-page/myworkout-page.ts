@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 
 @Component({
-  templateUrl: 'build/pages/myworkout-page/myworkout-page.html',
+  templateUrl: './myworkout-page.html',
 })
 export class MyWorkoutPage {
   public lineChartData: Array<any> = [

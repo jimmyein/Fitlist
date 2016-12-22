@@ -4,7 +4,7 @@ import {NavController, NavParams, Loading} from 'ionic-angular';
 import {FitnessSearchResultSchema} from '../../model/FitnessSearchResultSchema';
 
 @Component({
-  templateUrl: 'build/pages/workoutDetail-page/workoutDetail-page.html'
+  templateUrl: './workoutDetail-page.html'
 })
 export class workoutDetailPage {
   public workoutPlan: FitnessSearchResultSchema;

@@ -9,7 +9,7 @@ import { FitnessSearchResultSchema } from '../../model/FitnessSearchResultSchema
 import { workoutDetailPage } from '../workoutDetail-page/workoutDetail-page';
 
 @Component({
-  templateUrl: 'build/pages/detail-page/detail-page.html'
+  templateUrl: './detail-page.html'
 })
 export class DetailPage {
 
