@@ -1,9 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home-page/home-page';
@@ -13,9 +10,6 @@ import { CommentsPage } from '../pages/comments-page/comments-page';
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
     TabsPage,
     HomePage,
     StorePage,
@@ -27,9 +21,6 @@ import { CommentsPage } from '../pages/comments-page/comments-page';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
     TabsPage,
     HomePage,
     StorePage,

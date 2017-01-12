@@ -4,8 +4,6 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { HttpServiceBase } from '../services/HttpServiceBase';
@@ -33,8 +31,6 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage },
       { title: 'FitList', component: TabsPage }
     ];
 
